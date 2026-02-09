@@ -1,0 +1,19 @@
+<!-- crie a estrutura básica de um documento HTML: -->
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Visualizar Objeto JSON</title>
+</head>
+<body> <!-- dentro da tag <body>, insira um script JavaScript para definir o objeto JSON e visualizá-lo na página-->
+  <script>
+    var meuObjetoJSON = {
+      "nome": "Ana",
+      "idade": 30,
+      "profissao": "Professora"
+    };
+    document.write(JSON.stringify(meuObjetoJSON, null, 2));
+  </script>
+</body>
+</html>
