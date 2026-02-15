@@ -1,0 +1,33 @@
+/*
+    CONTENT: o que está dentro da caixa, como texto ou imagens;
+    PADDING: espaço entre o conteúdo e a borda da caixa;
+    BORDER: a linha ao redor do padding (ou conteúdo se não houver padding);
+    MARGIN: espaço fora da borda, separando a caixa de outras caixas
+*/
+
+body {
+    font-family: 'Times New Roman', Times, serif;
+    color: #333;
+}
+
+h1 {
+    color: #4CAF50;
+    text-align: center;
+    background-color: #f0f0f0;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+.box {
+    width: 300px; /* largura da caixa */
+    padding: 20px; /* espaçamento interno (padding) */
+    border: 2px solid #FF5735; /* borda da caixa */
+    margin: 20px auto; /* espaçamento externo (margin) e centralização */
+    background-color: #FFD700;
+    text-align: center;
+}
+
+.box h2 {
+    text-align: left;
+    text-decoration: underline;
+}

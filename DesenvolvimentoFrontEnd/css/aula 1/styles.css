@@ -1,0 +1,57 @@
+/*
+    CSS (Cascading Style Sheets - Folhas em Estilo Cascata)
+
+    ESTRUTURA BÁSICA DE UMA REGRA CSS
+
+    selector {
+        propriedade1: valor1;
+        propriedade2: valor2;
+    }
+*/
+
+body {
+    background-color: #f0f0f0;
+    font-family: 'Times New Roman', Times, serif;
+    margin: 0; /* remove todas as margens externas do <body> */
+    padding: 0; /* remove todo o padding interno do <body> */
+    /* padding: imagine que você tem uma foto que você quer colocar em um porta retrato. quando você coloca a foto no porta-retrato, pode haver um espaço nas bordas. esse espaço extra ao redor da foto é como o padding em CSS */
+}
+
+header {
+    background-color: #333;
+    color: white; /* texto branco */
+    padding: 10px;
+    text-align: center; /* centraliza o texto */
+}
+
+p {
+    color: #333;
+    font-size: 16px; /* tamanho da fonte */
+    line-height: 1.5; /* altura da linha */
+    margin: 10px 20px; /* margens ao redor do parágrafo */
+}
+
+.paragrafo-destaque {
+    background-color: #ffeb3b;
+    padding: 10px;
+    border-left: 5px solid #fbc02d; /* borda à equerda */
+}
+
+a {
+    color: blue;
+    text-decoration: none; /* remove o sublinhado */
+}
+
+a:hover { /* link ao passar o mouse em cima */
+    text-decoration: underline; /* coloca o sublinhado */
+}
+
+footer { /* rodapé */
+    background-color: rgb(113, 113, 130); /* cor de fundo do rodapé */
+    color: black;
+    text-align: center; /* centraliza o texto */
+    padding: 15px;
+    position: fixed; /* fixa o rodapé na parte inferior */
+    bottom: 0;
+    width: 100%; /* largura total */
+}

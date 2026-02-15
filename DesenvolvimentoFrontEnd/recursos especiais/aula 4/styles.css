@@ -1,0 +1,16 @@
+.caixa {
+    width: 200px;
+    height: 100px;
+    background-color: blue;
+    color: white;
+    text-align: center;
+    line-height: 100px;
+    transition-property: background-color, transform; /* especifica que a background-color e a transform serão animadas */
+    transition-duration: 2s; /* define que a transição levará 2 segundos para completar */
+    transition-timing-function: ease-in-out; /* define que a transição usará uma função de temporização ease-in-out, que começa e termina devagar */
+}
+
+.caixa:hover {
+    background-color: red; /* cor de fundo muda para vermelho quando o mouse passar por cima */
+    transform: rotate(360deg); /* caixa gira 360 graus (deg é degrees (graus) em inglês) */
+} 

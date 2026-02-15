@@ -1,0 +1,28 @@
+body {
+    font-family: 'Times New Roman', Times, serif;
+    background-color: #f0f0f0;
+    color: #333;
+    padding: 20px;
+}
+
+h1 {
+    color: #4CAF50;
+    text-align: center;
+}
+
+.gradient-box {
+    width: 300px;
+    padding: 20px;
+    margin: 20px auto;
+    color: #fff;
+    text-align: center;
+    border-radius: 8px;
+}
+
+.linear {
+    background: linear-gradient(to right, #ff7e5f, #feb47b);
+}
+
+.radial {
+    background: radial-gradient(circle, #ff7e5f, #feb47b);
+}

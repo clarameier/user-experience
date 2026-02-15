@@ -1,0 +1,58 @@
+body {
+    font-family: 'Times New Roman', Times, serif;
+    color: #f4f4f4;
+    padding: 20px;
+}
+
+.container {
+    max-width: 800px; /* largura máxima */
+    margin: 0 auto; /* centralizando o contêiner */
+    background-color: white;
+    padding: 20px; /* espaçamento interno */
+    border-radius: 8px; /* bordas arredondadas */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* sombra ao redor */
+    text-align: center;
+}
+
+h1 {
+    color: #333;
+    margin-bottom: 20px; /* espaçamento inferior */
+}
+
+.box {
+    width: 200px; /* largura da caixa */
+    padding: 20px; /* espaçamento interno */
+    margin: 20px auto; /* espaçamento ao redor e centralização */
+    border: 5px solid #007bff; /* borda azul */
+    background-color: #e7f1ff; /* cor de fundo da caixa */
+}
+/*
+    content-box (padrão):
+    como é calculado:
+        a largura e a altura que você define são aplicadas APENAS ao conteúdo do elemento.
+        o padding e a borda são adicionados à largura e altura específicadas, aumentando o tamanho total do elemento.
+    exmplo:
+        se você define uma largura de 200 pixels, adiciona 20 pixels de padding e 5 pixels de borda, o tamanho total da caixa será: 200 pixels (conteúdo) + 20 pixels (padding esquerdo) + 20 pixels (padding direito) + 5 pixels (borda esquerda) + 5 pixels (borda direita) = 250 pixels
+*/
+
+.content-box {
+    box-sizing: content-box; /* define box-sizing como content-box */
+}
+
+/*
+    border-box:
+    como é calculado:
+        a largura e a altura que você define INCLUEM o conteúdo, o padding e a borda.
+        isso significa que o tamanho total do elemento não muda, independentemente do padding e da borda que você adicionar.
+    exemplo:
+        se você define uma largura de 220 pixels e adiciona20 pixels de padding e 5 pixels de borda, o tamanho total da caixa permanecerá 200 pixels (largura total) = conteúdo + padding + borda
+*/
+
+.border-box {
+    box-sizing: border-box; /* define box-sizing como border-box */
+}
+
+.box p {
+    margin: 0;
+    color: #007bff;
+}
