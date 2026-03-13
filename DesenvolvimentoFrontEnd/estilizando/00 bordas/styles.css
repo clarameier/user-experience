@@ -1,0 +1,69 @@
+body {
+    font-family: 'Times New Roman', Times, serif;
+    margin: 0; /* remove todasas margens padrão do navegador */
+    padding: 20px; /* adiciona um preenchimento de 20px ao redor do conteúdo */
+    background-color: #f4f4f4;
+    display: flex; /* usa o modelo de layout flexbox para organizar os elementos filhos */
+    justify-content: center; /* centraliza todos os itens horizontalmente */
+    align-items: center; /* centraliza todos os itens verticalmente */
+    min-height: 100vh; /* define a altura mínima do corpo para ocupar toda a altura da janela */
+}
+
+.container {
+    display: grid; /* usa o modelo de layout grid para organizar os elementos filhos */
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr)); /* define o layout das colunas grid */
+    gap: 20px; /* define o espaçamento entre os itens do grid */
+    width: 80%; /* define a largura do container como 80% da largura da janela */
+}
+
+.border-example {
+    background-color: white;
+    padding: 20px; /* adiciona um preenchimento interno de 20px ao container */
+    text-align: center;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1),;
+}
+
+.solid-border {
+    border: 3px solid darkorange;
+}
+
+.dotted-border {
+    border: 3px dotted black;
+}
+
+.dashed-border {
+    border: 3px dashed purple;
+}
+
+.double-border {
+    border: 3px double salmon;
+}
+
+.groove-border {
+    border: 3px groove aquamarine;
+}
+
+.ridge-border {
+    border: 3px ridge sandybrown;
+}
+
+.inset-border {
+    border: 3px inset firebrick;
+}
+
+.outset-border {
+    border: 3px outset blue;
+}
+
+.rounded-border {
+    border: 3px solid greenyellow;
+    border-radius: 15px;
+}
+
+.complex-border {
+    border-top: 3px solid lightcoral;
+    border-right: 3px dashed teal;
+    border-bottom: 3px dotted goldenrod;
+    border-left: 3px double blueviolet;
+    border-radius: 15px;
+}

@@ -1,0 +1,46 @@
+body {
+    font-family: 'Times New Roman', Times, serif;
+    margin: 0; /* remove todasas margens padrão do navegador */
+    padding: 20px; /* adiciona um preenchimento de 20px ao redor do conteúdo */
+    background-color: #f4f4f4;
+    display: flex; /* usa o modelo de layout flexbox para organizar os elementos filhos */
+    justify-content: center; /* centraliza todos os itens horizontalmente */
+    align-items: center; /* centraliza todos os itens verticalmente */
+    min-height: 100vh; /* define a altura mínima do corpo para ocupar toda a altura da janela */
+} 
+
+.container {
+    display: grid; /* usa o modelo de layout grid para organizar os elementos filhos */
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr)); /* define o layout das colunas grid */
+    gap: 20px; /* define o espaçamento entre os itens do grid */
+    width: 80%; /* define a largura do container como 80% da largura da janela */
+}
+
+.opacity-example {
+    background-color: purple;
+    padding: 20px; /* adiciona um preenchimento interno de 20px ao container */
+    text-align: center;
+    color: white;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.opacity-100 {
+    opacity: 100;
+}
+
+.opacity-75 {
+    opacity: 0.75;
+}
+
+.opacity-50 {
+    opacity: 0.50;
+}
+
+.opacity-25 {
+    opacity: 0.25;
+}
+
+.opacity-10 {
+    opacity: 0.10;
+}

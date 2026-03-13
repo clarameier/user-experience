@@ -1,0 +1,44 @@
+body {
+    font-family: 'Times New Roman', Times, serif;
+    margin: 0; /* remove as margens padrão do navegador */
+    padding: 0; /* remove o preenchimento padrão do navegador */
+    background-color: #f4f4f4;
+    display: flex; /* usa o modelo de layout flexbox para o corpo */
+    flex-direction: column; /* organiza os elementos filhos em uma coluna vertical */
+    align-items: center; /* centraliza os itens no eixo transversal (horizontal) */
+}
+
+header,
+footer {
+    width: 100%; /* define a largura do cabeçalho e rodapé para ocupar 100% da largura da página */
+    background-color: blueviolet; 
+    color: aquamarine;
+    text-align: center;
+    padding: 1em 0; /* adiciona um preenchimento de 1em na parte superior e inferior */
+}
+
+main {
+    flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+}
+
+.fixed-container {
+    width: 600px;
+    background-color: white;
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    text-align: center;
+}
+
+h1,
+h2 {
+    margin: 0 0 20px 0; /* remove as margens superiores e inferiores dos títulos */
+}
+
+p {
+    margin: 0; /* remove as margens padrão dos parágrafos */
+}
