@@ -55,11 +55,11 @@
                 <form>
                     <div class="form-group">
                         <label for="nome">Nome:</label>
-                        <input type="text" id="nome" class="form-control">
+                        <input type="text" id="nome" class="form-control" name="name">
                     </div>
                     <div class="form-group">
                         <label for="email">Email:</label>
-                        <input type="email" id="email" class="form-control">
+                        <input type="email" id="email" class="form-control" name="email">
                     </div>
                     <button type="submit" class="btn btn-primary">Enviar</button>
                 </form>
@@ -70,7 +70,7 @@
                 <h3>Imagem</h3>
                 <img src="https://image-placeholder.com/images/actual-size/180x60.png" alt="Exemplo de Imagem" class="img-fluid">
                 <h3>Vídeo</h3>
-                <video controls class="w-100">
+                <video controls class="w-25">
                     <source src="https://www.w3schools.com/html/mov_bbb.mp4" type="video/mp4">
                     Seu navegador não suporta o elemento de vídeo.
                 </video>
@@ -90,6 +90,79 @@
         <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
         <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
         <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+        <script>
+            // usando getElementById()
+            const apresentacaoSection = document.getElementById(`apresentacao`);
+            apresentacaoSection.style.backgroundColor = `#f0f0f0`;
+        
+            // usando getElementsByClassName()
+            const textWhiteElements = document.getElementsByClassName(`text-white`);
+            for (let i = 0; i < textWhiteElements.length; i++) {
+                textWhiteElements[i].className = `blue`;
+                
+            }
+
+            // usando getElementsByTagName()
+            const sectionElements = document.getElementsByTagName(`section`);
+            for (let i = 0; i < sectionElements.length; i++) {
+                sectionElements[i].style.border = `1px solid #ccc`;
+                
+            }
+
+            // usando getElementsByName()
+            const emailInput = document.getElementsByName(`email`)[0];
+            emailInput.placeholder = `Digite seu e-mail aqui`;
+
+            const nameInput = document.getElementsByName(`name`)[0];
+            nameInput.placeholder = `Digite seu nome aqui`;
+
+            // criando um novo elemento
+            const newDiv = document.createElement(`div`);
+
+            // definindo atributos para o novo elemento
+            newDiv.setAttribute(`class`, `alert alert-info`);
+            newDiv.setAttribute(`role`, `alert`);
+
+            // adicionando conteúdo ao novo elemento
+            newDiv.textContent = `Este é um novo alerta criado dinamicamente!`;
+
+            // adicionando o novo elemento ao DOM
+            document.body.appendChild(newDiv);
+
+            // manipulação de estilos (css)
+            const mainContent = document.querySelector(`main`);
+            mainContent.style.padding = `5em`;
+            mainContent.style.backgroundColor = `#e0e0e0`;
+
+            // manipulação de conteúdo
+            const h1Element = document.querySelector(`h1`);
+            h1Element.textContent = `Título Atualizado Dinamicamente`;
+
+            // manipulação de atributos
+            const imgElement = document.querySelector(`img`);
+            imgElement.setAttribute(`alt`, `Imagem de Exemplo Atualizada`);
+            imgElement.setAttribute(`src`, `https://image-placeholder.com/images/actual-size/57x57.png`);
+
+            // manipulação de eventos
+            const submitButton = document.querySelector(`button[type="submit"]`);
+            submitButton.addEventListener(`click`, function(event) {
+                event.preventDefault();
+                alert(`Formulário enviado!`);
+            });
+
+            // navegação no DOM
+            const secondSection = document.querySelectorAll(`section`)[1];
+            const nextSection = secondSection.nextElementSibling;
+            if (nextSection) {
+                nextSection.style.border = `2px dashed #000`;
+            }
+
+            // remoção de elementos
+            const footerElement = document.querySelector(`footer`);
+            footerElement.remove();
+            
+        </script>
 
     </body>
 </html>
