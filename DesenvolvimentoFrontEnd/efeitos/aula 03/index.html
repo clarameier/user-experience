@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=devide-width, initial-scale=1.0">
+    <title>Exemplo de Efeito Translate</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <div class="container">
+        <h1>Exemplo de Efeito Translate</h1>
+
+        <button id="translateButton">Clique para mover</button>
+    </div>
+
+    <script>
+        const button = document.getElementById(`translateButton`);
+
+        button.addEventListener(`click`, function () {
+            button.classList.toggle(`translate`);
+        });
+    </script>
+    
+</body>
+</html>
