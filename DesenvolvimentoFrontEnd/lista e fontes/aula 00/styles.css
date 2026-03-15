@@ -1,0 +1,61 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+    padding: 20px;
+    background-color: #f4f4f4;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+.container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    gap: 20px;
+    width: 80%;
+}
+
+.font-example {
+    padding: 20px;
+    text-align: center;
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.default-font {
+    font-family: Arial, sans-serif;
+}
+
+.serif-font {
+    font-family: 'Times New Roman', Times, serif;
+}
+
+.sans-serif-font {
+    font-family: Helvetica, sans-serif;
+}
+
+.monospace-font {
+    font-family: 'Courier New', Courier, monospace
+}
+
+.cursive-font {
+    font-family: cursive;
+}
+
+.fancy-font {
+    font-family: fantasy;
+}
+
+.bold-font {
+    font-weight: bold;
+}
+
+.italic-font {
+    font-style: italic; 
+}
+
+.uppercase-font {
+    text-transform: uppercase;
+}

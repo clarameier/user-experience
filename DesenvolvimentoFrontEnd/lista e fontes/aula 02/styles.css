@@ -1,0 +1,48 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+    padding: 20px;
+    background-color: #f4f4f4;
+}
+
+.container {
+    max-width: 800px;
+    margin: 0 auto;
+    background-color: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+
+section {
+    margin-bottom: 20px;
+}
+
+h2 {
+    margin-top: 0;
+}
+
+.unordered-list {
+    list-style-type: disc;
+    padding-left: 20px;
+}
+
+.ordered-list {
+    list-style-type: decimal;
+    padding-left: 20px;
+}
+
+.nested-list {
+    list-style-type: disc;
+    padding-left: 20px;
+}
+
+.nested-list ul {
+    list-style-type: circle;
+    padding-left: 20px;
+}
+
+.description-list dt {
+    font-weight: bold;
+}
