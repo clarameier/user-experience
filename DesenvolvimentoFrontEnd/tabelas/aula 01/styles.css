@@ -1,0 +1,13 @@
+.minha-tabela {
+    border: 1px solid purple;
+    width: 70%;
+    height: 200px;
+    margin: 0 auto;
+    border-spacing: 5px;
+}
+
+.minha-tabela th, .minha-tabela td {
+    padding: 10px;
+    border: 1px solid yellowgreen;
+    text-align: center;
+}

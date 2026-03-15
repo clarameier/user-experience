@@ -1,0 +1,16 @@
+h1 {
+    text-align: center;
+}
+
+.minha-tabela {
+    width: 70%;
+    height: 200px;
+    margin: 0 auto;
+    border-spacing: 5px;
+}
+
+.minha-tabela th, .minha-tabela td {
+    padding: 10px;
+    border: 1px solid peru;
+    text-align: center;
+}

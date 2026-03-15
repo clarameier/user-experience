@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=devide-width, initial-scale=1.0">
+    <title>Alternativas para Tabelas em HTML</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <div class="container">
+    <h1>Alternativas para Tabelas em HTML</h1>
+
+        <h2>Tabela Simples</h2>
+        <table> <!-- cria uma tabela -->
+            <thead> <!-- cabeçalho da tabela -->
+                <tr> <!-- linha do cabeçalho -->
+                    <th>Produto</th> <!-- cabeçalho da coluna -->
+                    <th>Preço</th>
+                    <th>Quantidade</th>
+                </tr>
+            </thead>
+
+            <tbody>
+                <tr>
+                    <td>Arroz</td> <!-- dados da tabela -->
+                    <td>R$20,00</td>
+                    <td>2</td>
+                </tr>
+
+                <tr>
+                    <td>Feijão</td> <!-- dados da tabela -->
+                    <td>R$10,00</td>
+                    <td>5</td>
+                </tr>
+
+                <tr>
+                    <td>Macarrão</td> <!-- dados da tabela -->
+                    <td>R$15,00</td>
+                    <td>3</td>
+                </tr>
+
+            </tbody>
+        </table>
+
+        <h2>Lista Ordenada</h2>
+        <ol>
+            <li>Arroz - R$20,00 - Quantidade: 2</li>
+            <li>Feijão - R$10,00 - Quantidade: 5</li>
+            <li>Macarrão - R$15,00 - Quantidade: 3</li>
+        </ol>
+
+        <h2>Lista Não Ordenada</h2>
+        <ul>
+            <li>Arroz - R$20,00 - Quantidade: 2</li>
+            <li>Feijão - R$10,00 - Quantidade: 5</li>
+            <li>Macarrão - R$15,00 - Quantidade: 3</li>
+        </ul>
+
+        <h2>Div com Flexbox</h2>
+        <div class="flex-container">
+            <div class="flex-item"> Produto: Arroz<br>Preço: R$20,00<br>Quantidade: 2</div>
+            <div class="flex-item">Produto: Feijão<br>Preço: R$10,00<br>Quantidade: 5</div>
+            <div class="flex-item">Produto: Macarrão<br>Preço: R$15,00<br>Quantidade: 3</div>
+        </div>
+        
+    </div>
+</body>
+</html>
