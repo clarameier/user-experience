@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=devide-width, initial-scale=1.0">
+    <title>Exemplo de Métodos de Envio de Formulário</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <div class="container">
+        <h1>Exemplo de Formulários</h1>
+
+        <form method="GET" action="/pagina-de-destino-get">
+            <h2>Método GET</h2>
+            <label for="nome-get">Nome:</label>
+            <input type="text" id="nome-get" name="nome" placeholder="Digite seu nome">
+            <button type="submit">Enviar (GET)</button>
+        </form>
+
+        <form method="POST" action="/pagina-de-destino-post">
+            <h2>Método POST</h2>
+            <label for="nome-post">Nome:</label>
+            <input type="text" id="nome-post" name="nome" placeholder="Digite seu nome">
+            <button type="submit">Enviar (POST)</button>
+        </form>
+
+    </div>
+</body>
+</html>

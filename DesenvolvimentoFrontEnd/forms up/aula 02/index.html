@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=devide-width, initial-scale=1.0">
+    <title>Exemplo de Mensagem de Erro</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <div class="container">
+        <h1>Formulário de Contato</h1>
+
+        <form>
+
+            <label for="nome">Nome:</label>
+            <input type="text" id="nome" name="nome" placeholder="Digite seu nome" required>
+            <span class="error-message">Por favor, insira seu nome.</span>
+
+            <label for="email">E-mail:</label>
+            <input type="email" id="email" name="email" placeholder="Digite seu e-mail" required>
+            <span class="error-message">Por favor, insira um e-mail válido.</span>
+
+            <label for="mensagem">Mensagem:</label>
+            <textarea id="mensagem" name="mensagem" rows="4" placeholder="Digite sua mensagem" required></textarea>
+            <span class="error-message">Por favor, insira sua mensagem.</span>
+
+            <button type="submit">Enviar</button>
+
+        </form>
+
+    </div>
+</body>
+</html>
