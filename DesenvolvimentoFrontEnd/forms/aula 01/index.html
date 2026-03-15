@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=devide-width, initial-scale=1.0">
+    <title>Exemplo de Combobox e Fieldset</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <fieldset> <!-- agrupa elementos relacionados -->
+        <legend>Informações Pessoais</legend> <!-- título do fieldset -->
+
+        <label for="nome">Nome:</label> 
+        <input type="text" id="nome" name="nome">
+
+        <label for="pais">País:</label> 
+        <select id="pais" name="pais"> <!-- combobox para escolher opções -->
+            <option value="brasil">Brasil</option>
+            <option value="argentina">Argentina</option>
+            <option value="chile">Chile</option>
+        </select>
+    </fieldset>
+</body>
+</html>
