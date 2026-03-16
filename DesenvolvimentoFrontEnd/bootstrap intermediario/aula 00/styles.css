@@ -1,0 +1,12 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #99970d;
+    padding: 20px; /* espaçamento ao redor */
+}
+
+.container {
+    background-color: white;
+    padding: 20px; /* espaçamento interno */
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
