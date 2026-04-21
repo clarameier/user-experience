@@ -1,0 +1,9 @@
+header {
+    background-color: blanchedalmond;
+    padding: 20px; /* espaçamento ao redor */
+    border-radius: 5px;
+}
+
+footer {
+    margin-top: 20px;
+}
